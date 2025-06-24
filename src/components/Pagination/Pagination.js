@@ -9,7 +9,8 @@ const Pagination = ({ setPageNumber }) => {
     setPageNumber(x => Math.max(1, x - 1));
   };
 
-  // Buton stilleri için inline CSS objesi
+ //butonlar için css yapıldı. 
+ 
   const buttonStyle = {
     fontFamily: "'Source Code Pro', Menlo, Monaco, Consolas, 'Courier New', monospace",
     fontWeight: 600,
@@ -17,8 +18,8 @@ const Pagination = ({ setPageNumber }) => {
     padding: '8px 20px',
     borderRadius: '6px',
     border: '3px solid #ff009d',
-    backgroundColor: '#ff009d', // İç rengi pembe
-    color: 'white', // Yazı rengi beyaz
+    backgroundColor: '#ff009d',
+    color: 'white', 
     transition: 'all 0.3s ease',
     cursor: 'pointer',
     boxShadow: 'none',
@@ -27,8 +28,8 @@ const Pagination = ({ setPageNumber }) => {
 
   const hoverStyle = {
     ...buttonStyle,
-    transform: 'translateY(-3px)', // Hafifçe yukarı kalkma efekti
-    boxShadow: '0 4px 8px rgba(255, 0, 157, 0.3)' // Gölge efekti
+    transform: 'translateY(-3px)',
+    boxShadow: '0 4px 8px rgba(255, 0, 157, 0.3)'
   };
 
   return (
