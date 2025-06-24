@@ -1,11 +1,9 @@
-/* Pagination.css */
 .pagination-btn {
   font-family: 'Source Code Pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
 
-/* Bootstrap btn-primary class'ını override etmek için */
 .btn-primary {
-  font-family: inherit; /* Üst elementten fontu miras al */
+  font-family: inherit; 
 }
