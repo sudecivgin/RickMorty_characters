@@ -1,0 +1,61 @@
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 5vh; /* Ekranın yarısı kadar yükseklik */
+  width: 100%;
+  padding: 10px; /* Kenar boşlukları azaltıldı */
+  box-sizing: border-box;
+}
+
+.search-form {
+  display: flex;
+  gap: 0.1px; /* Elemanlar arası boşluk azaltıldı */
+  width: 100%;
+  max-width: 600px;
+  padding: 20px; /* İç boşluk azaltıldı */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Gölge inceltildi */
+}
+
+.search-input {
+  padding: 5px 8px; /* Padding azaltıldı */
+  border: 2px solid #ff009d;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 14px; /* Yazı boyutu küçültüldü */
+  transition: all 0.2s ease;
+  outline: none;
+  flex-grow: 1;
+}
+
+.search-button {
+  padding: 10px 20px; /* Padding azaltıldı */
+  background-color: #df028a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px; /* Yazı boyutu küçültüldü */
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+/* Mobil uyumluluk */
+@media (max-width: 768px) {
+  .search-container {
+    min-height: 40vh; /* Mobilde daha az yükseklik */
+    padding: 5px;
+  }
+  
+  .search-form {
+    padding: 15px;
+    flex-direction: column;
+  }
+}
+
+.search-container{
+  font-family: 'source-code-pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+}

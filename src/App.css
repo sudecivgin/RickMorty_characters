@@ -1,11 +1,18 @@
 .App {
   text-align: center;
+  /* Örneğin App.css veya index.css içine */
+
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  /* Örneğin App.css veya index.css içine */
+
+
+
 }
+/* Örneğin App.css veya index.css içine */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -22,6 +29,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
 }
 
 .App-link {
@@ -35,4 +43,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* Örneğin index.css veya App.css içine */
+.text-primary {
+  color: #ff009d !important; /* Pembe renk */
+  font-weight: bold;
+  text-shadow: 0 0
 }
