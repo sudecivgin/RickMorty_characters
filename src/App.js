@@ -5,7 +5,7 @@ import Filters from "./components/Filters/Filters";
 import Cards from "./components/Cards/Cards";
 import Pagination from './components/Pagination/Pagination';
 import Search from './components/Search/Search';
-// App.js veya index.js dosyanızın en üstüne ekleyin
+
 import './App.css';
 function App() {
   const [pageNumber, setPageNumber] = useState(1);
@@ -16,11 +16,10 @@ const [search, setSearch, ]= useState("")
   const [fetchData, setFetchData] = useState({});
   const { info, results } = fetchData;
 
-  // API URL'ini useMemo ile optimize ediyoruz (dependency array'de pageNumber var)
-// API URL'ini search değişkenine de bağlı hale getirin
+  //Api kısmı burada!!!!
 const api = useMemo(() => (
   `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}`
-), [pageNumber, search]); // search değişkenini dependency array'e ekleyin
+), [pageNumber, search]); 
 
   useEffect(() => {
     (async function () {
@@ -32,7 +31,7 @@ const api = useMemo(() => (
         console.error("API Error:", error);
       }
     })();
-  }, [api]); // api değiştiğinde yeniden çalışır
+  }, [api]); 
 
   return (
     <div className="App">
