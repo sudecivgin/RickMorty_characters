@@ -1,0 +1,61 @@
+/* filters.css */
+.col-3 {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.text-center.fw-bold.fs-4.mb-4 {
+  font-family: 'source-code-pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
+  color: #333;
+  text-transform: uppercase; 
+  letter-spacing: 1px;
+}
+
+.text-center.text-decoration-underline {
+  font-family: 'source-code-pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
+  color: #6c757d;
+  transition: all 0.3s ease;
+  padding: 0.25rem 0;
+  display: inline-block;
+}
+
+.text-center.text-decoration-underline:hover {
+  color: #ff009d ;
+  text-decoration: none;
+  transform: translateY(-1px); 
+}
+.accordion-body {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.filters-container {
+  font-family: 'source-code-pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.filters-container .accordion-button,
+.filters-container .accordion-body,
+.filters-container .text-center {
+  font-family: inherit;
+}
+
+.clear-filters-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  background-color: #f8f9fa; 
+  border: 1px solid #dee2e6;
+  border-radius: 12px; 
+  font-weight: 500;
+  color: #df028a; 
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-family: 'source-code-pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.clear-filters-btn:hover {
+  background-color: #e2e6ea;
+  color: #084298;
+  transform: scale(1.05);
+}

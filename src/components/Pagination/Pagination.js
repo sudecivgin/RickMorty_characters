@@ -1,58 +1,32 @@
 import "./Pagination.css";
+import ReactPaginate from 'react-paginate';
 
-const Pagination = ({ setPageNumber }) => {
-  const Next = () => {
-    setPageNumber(x => x + 1);
-  };
-
-  const Prev = () => {
-    setPageNumber(x => Math.max(1, x - 1));
-  };
-
- //butonlar için css yapıldı. 
- 
-  const buttonStyle = {
-    fontFamily: "'Source Code Pro', Menlo, Monaco, Consolas, 'Courier New', monospace",
-    fontWeight: 600,
-    letterSpacing: '0.5px',
-    padding: '8px 20px',
-    borderRadius: '6px',
-    border: '3px solid #ff009d',
-    backgroundColor: '#ff009d',
-    color: 'white', 
-    transition: 'all 0.3s ease',
-    cursor: 'pointer',
-    boxShadow: 'none',
-    transform: 'translateY(0)'
-  };
-
-  const hoverStyle = {
-    ...buttonStyle,
-    transform: 'translateY(-3px)',
-    boxShadow: '0 4px 8px rgba(255, 0, 157, 0.3)'
+const Pagination = ({ pageNumber, setPageNumber, info }) => {
+  const handlePageClick = (data) => {
+    setPageNumber(data.selected + 1);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
-    <div className="container d-flex justify-content-center gap-5 my-5">
-      <button 
-        onClick={Prev} 
-        className="btn"
-        style={buttonStyle}
-        onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-3px)'}
-        onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-      >
-        Prev
-      </button>
-      <button 
-        onClick={Next} 
-        className="btn"
-        style={buttonStyle}
-        onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-3px)'}
-        onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-      >
-        Next
-      </button>
-    </div>
+    <ReactPaginate
+      className="pagination"
+      pageClassName="page-item"
+      pageLinkClassName="page-link"
+      previousClassName="page-item prev-button"
+      nextClassName="page-item next-button"
+      previousLinkClassName="page-link"
+      nextLinkClassName="page-link"
+      breakLabel="..."
+      breakClassName="page-item"
+      breakLinkClassName="page-link"
+      activeClassName="active"
+      previousLabel="Prev"  
+      nextLabel="Next"      
+      pageCount={info?.pages || 1}
+      onPageChange={handlePageClick}
+      forcePage={pageNumber === 1 ? 0 : pageNumber - 1}
+      renderOnZeroPageCount={null}
+    />
   );
 };
 

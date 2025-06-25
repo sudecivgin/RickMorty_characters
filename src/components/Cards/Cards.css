@@ -15,7 +15,7 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   transition: all 0.3s ease; 
 }
 
-/*hareketlendirme kısmı kartı*/
+/*kartı hareketlendirme kısmını burda uyguladım*/
 
 .card:hover {
   border-color: #000000; 

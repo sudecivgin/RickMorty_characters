@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Search.css";
 
 const Search = ({ setSearch, setPageNumber }) => {
-  const handleChange = (e) => {
-    setPageNumber(1); // Arama yapıldığı zaman ilk sayfaya dönmek için bunu kullanıyoruz!!!!!!
-    setSearch(e.target.value);
-  };
+  const [inputValue, setInputValue] = useState('');
 
+  const handleChange = (e) => {
+    setInputValue(e.target.value);
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
+    setPageNumber(1);
+    setSearch(inputValue);
   };
-
   return (
     <div className="search-container">
       <form className="search-form mb-5" onSubmit={handleSubmit}>
@@ -18,6 +19,7 @@ const Search = ({ setSearch, setPageNumber }) => {
           type="text"
           className="search-input"
           placeholder="Search for..."
+          value={inputValue}
           onChange={handleChange}
         />
         <button 

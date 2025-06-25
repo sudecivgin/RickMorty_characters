@@ -10,13 +10,14 @@
 
 .search-form {
   display: flex;
-  gap: 0.1px; 
+  gap: 5px; 
   width: 100%;
   max-width: 600px;
   padding: 20px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+
 }
 
 .search-input {
@@ -40,13 +41,21 @@
   cursor: pointer;
   transition: all 0.2s ease;
   white-space: nowrap;
+  transition: all 0.3s ease; 
+  position: relative;
 }
+.search-button:hover {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 4px 8px rgba(223, 2, 138, 0.3);
+}
+
 
 /* Mobil uyumluluk */
 @media (max-width: 768px) {
   .search-container {
     min-height: 40vh; 
     padding: 5px;
+    gap: 0.1px;
   }
   
   .search-form {
