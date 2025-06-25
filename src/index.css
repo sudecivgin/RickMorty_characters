@@ -6,11 +6,11 @@ body {
 
 .ubuntu {
   font-family: 'Rubik',source-code-pro, Menlo, Monaco, Consolas, 'Courier New';
-  font-weight: 700; /* Bold */
+  font-weight: 700; 
   
 }
 .ubuntu.bold {
-  font-weight: 1000; /* veya "bold" */
+  font-weight: 1000;
 }
 
 code {

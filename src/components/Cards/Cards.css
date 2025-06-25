@@ -9,15 +9,17 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 .card{
-  border: 3px solid #ff009d; /* Kalın turuncu çerçeve (istediğiniz rengi seçebilirsiniz) */
-  border-radius: 10px; /* Köşeleri yuvarlatma */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* İsteğe bağlı gölge efekti */
-  transition: all 0.3s ease; /* Geçiş efekti */
+  border: 3px solid #ff009d; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease; 
 }
 
+/*hareketlendirme kısmı kartı*/
+
 .card:hover {
-  border-color: #000000; /* Fare üzerine gelindiğinde çerçeve rengi değişimi */
-  transform: translateY(-5px); /* Hafif yükselme efekti */
+  border-color: #000000; 
+  transform: translateY(-5px); 
 }
 
 .text-danger{

@@ -3,7 +3,7 @@ import "./Search.css";
 
 const Search = ({ setSearch, setPageNumber }) => {
   const handleChange = (e) => {
-    setPageNumber(1); // Arama yapıldığında 1. sayfaya dön
+    setPageNumber(1); // Arama yapıldığı zaman ilk sayfaya dönmek için bunu kullanıyoruz!!!!!!
     setSearch(e.target.value);
   };
 

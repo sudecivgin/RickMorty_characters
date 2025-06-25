@@ -3,7 +3,7 @@ import "./Cards.css";
 const Cards = ({ results }) => {
   let display;
 
-  if (results && results.length > 0) { // results'ın hem tanımlı hem de boş olmadığından emin ol
+  if (results && results.length > 0) { 
     display = results.map((x) => {
       let { id, name, image, location, status } = x;
 
