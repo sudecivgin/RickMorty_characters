@@ -54,7 +54,7 @@ Aşağıda projeye ait bazı ekran görüntülerini bulabilirsiniz:
 git clone https://github.com/sudecivgin/RickMorty_characters.git
 
 # Klasöre geç
-cd REACT_RM
+cd react_rm
 
 # Gerekli paketleri yükle
 npm install
