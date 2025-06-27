@@ -18,7 +18,7 @@ const Search = ({ setSearch, setPageNumber }) => {
         <input
           type="text"
           className="search-input"
-          placeholder="Search for..."
+          placeholder="Type a character..."
           value={inputValue}
           onChange={handleChange}
         />

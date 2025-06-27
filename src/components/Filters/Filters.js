@@ -35,7 +35,7 @@ const Filters = ({ setFilters }) => {
 
   return (
     <div className="filters-container">
-      <div className="text-center fw-bold fs-4 mb-4">🔍Filter</div>
+      <div className="text-center fw-bold fs-4 mb-4">Filter</div>
 
       <div className="text-center mb-4">
         <button 
@@ -127,6 +127,7 @@ const Filters = ({ setFilters }) => {
                     onChange={() => handleFilterChange('gender', gender)}
                   />
                   <label className="form-check-label" htmlFor={`gender-${gender}`}>
+                    
                     {gender}
                   </label>
                 </div>

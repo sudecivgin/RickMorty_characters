@@ -1,4 +1,3 @@
-/* filters.css */
 .col-3 {
   padding: 1rem;
   background-color: #f8f9fa;
@@ -55,7 +54,9 @@
 }
 
 .clear-filters-btn:hover {
-  background-color: #e2e6ea;
-  color: #084298;
   transform: scale(1.05);
+  box-shadow: 0 1px 5px rgba(223, 2, 138, 0.4);
+}
+.accordion-button {
+  font-weight: bold;
 }

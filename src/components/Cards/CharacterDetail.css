@@ -1,0 +1,42 @@
+.character-detail-container {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.character-content {
+  width: 90%;
+  max-width: 800px; 
+  margin: 0 auto;
+}
+
+.character-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+
+
+.character-info-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.character-info-section p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.status-badge {
+  font-size: 1rem;
+  padding: 0.35rem 0.75rem;
+}

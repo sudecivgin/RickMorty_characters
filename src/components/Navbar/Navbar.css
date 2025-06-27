@@ -1,0 +1,33 @@
+.brand-logo {
+  color: #000000; 
+  font-weight: bold;
+}
+
+.universe-pink {
+  color: #df028a; 
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  margin: 0 15px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-nav .nav-link:hover {
+  transform: scale(1.1);
+  color: #df028a !important;
+}
+
+.navbar {
+  background-color: transparent !important; 
+  font-family: 'source-code-pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-weight: bold;
+  padding: 10px 0;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 40px;
+}

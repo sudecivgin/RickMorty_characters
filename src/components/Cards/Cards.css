@@ -19,7 +19,7 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 
 .card:hover {
   border-color: #000000; 
-  transform: translateY(-5px); 
+  transform: translateY(-6px); 
 }
 
 .text-danger{
@@ -29,4 +29,26 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 .text-muted{
     font-family: 'source-code-pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
 
+}
+
+
+
+.character-card {
+  border: 3px solid #df028a; 
+  border-radius: 8px; 
+  overflow: hidden; 
+  transition: all 0.3s ease;
+}
+
+.character-card:hover {
+  border-color: #000000; 
+}
+
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-img-container {
+  border-bottom: 10px solid #f0f0f0; 
 }
