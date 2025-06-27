@@ -9,7 +9,6 @@ const repliks = [
   "Sometimes science is more art than science.",
   "Grass tastes bad.",
   "Existence is pain to a Meeseeks, Jerry!",
-  "You’re young, you have your whole life ahead of you, and your anal cavity is still taut yet malleable.",
   "What, so everyone's supposed to sleep every single night now? You realize that nighttime makes up half of all time?",
 ];
 
