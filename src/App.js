@@ -7,7 +7,7 @@ import Pagination from "./components/Pagination/Pagination";
 import Search from "./components/Search/Search";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter  as Router, Routes, Route, Navigate } from "react-router-dom"; 
 import Episodes from "./Pages/Episodes";
 import Location from "./Pages/Location";
 import CharacterDetail from "./components/Cards/CharacterDetail";
@@ -22,6 +22,7 @@ const Home = () => {
     gender: "",
   });
   const [fetchData, setFetchData] = useState({});
+  const [isLoading, setIsLoading] = useState(true); 
   const { info, results } = fetchData;
 
   const api = useMemo(() => {
@@ -37,32 +38,45 @@ const Home = () => {
   useEffect(() => {
     (async function () {
       try {
+        setIsLoading(true); 
         const response = await fetch(api);
         const data = await response.json();
         setFetchData(data);
       } catch (error) {
         console.error("API Error:", error);
-        setFetchData({});
+        setFetchData({ info: {}, results: [] }); 
+      } finally {
+        setIsLoading(false); 
       }
     })();
   }, [api]);
 
   return (
     <>
-      <Search setPageNumber={setPageNumber} setSearch={setSearch} />
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-4 col-md-5 mb-4">
-            <Filters setFilters={setFilters} />
-          </div>
-          <div className="col-lg-8 col-md-7">
-            <div className="row">
-              <Cards results={results || []} />
-            </div>
+      {isLoading ? (
+        <div className="text-center my-5">
+          <div className="spinner-border text-primary" role="status">
+            <span className="visually-hidden">Loading...</span>
           </div>
         </div>
-      </div>
-      <Pagination setPageNumber={setPageNumber} pageNumber={pageNumber} info={info} />
+      ) : (
+        <>
+          <Search setPageNumber={setPageNumber} setSearch={setSearch} />
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-4 col-md-5 mb-4">
+                <Filters setFilters={setFilters} />
+              </div>
+              <div className="col-lg-8 col-md-7">
+                <div className="row">
+                  <Cards results={results || []} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <Pagination setPageNumber={setPageNumber} pageNumber={pageNumber} info={info} />
+        </>
+      )}
     </>
   );
 };
@@ -73,7 +87,9 @@ const App = () => {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+         
+          <Route path="/" element={<Navigate to="/home" replace />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/episodes" element={<Episodes />} />
           <Route path="/location" element={<Location />} />
           <Route path="/character/:id" element={<CharacterDetail />} />

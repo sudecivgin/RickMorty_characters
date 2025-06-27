@@ -39,7 +39,7 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <Link to="/" className="nav-link active">🏠 Home</Link>
+            <Link to="/home" className="nav-link active">🏠 Home</Link>
             <Link to="/episodes" className="nav-link active">🎬 Episodes</Link>
             <Link to="/location" className="nav-link active">🌍 Location</Link>
             <button className="nav-link active" onClick={openPortal}>
