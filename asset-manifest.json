@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react_rm/static/css/main.32ae2e30.css",
-    "main.js": "/react_rm/static/js/main.50268b84.js",
-    "static/js/511.44ef5cd2.chunk.js": "/react_rm/static/js/511.44ef5cd2.chunk.js",
-    "index.html": "/react_rm/index.html",
-    "main.32ae2e30.css.map": "/react_rm/static/css/main.32ae2e30.css.map",
-    "main.50268b84.js.map": "/react_rm/static/js/main.50268b84.js.map",
-    "511.44ef5cd2.chunk.js.map": "/react_rm/static/js/511.44ef5cd2.chunk.js.map"
+    "main.css": "/RickMorty_characters/static/css/main.32ae2e30.css",
+    "main.js": "/RickMorty_characters/static/js/main.8e16a5da.js",
+    "static/js/511.44ef5cd2.chunk.js": "/RickMorty_characters/static/js/511.44ef5cd2.chunk.js",
+    "index.html": "/RickMorty_characters/index.html",
+    "main.32ae2e30.css.map": "/RickMorty_characters/static/css/main.32ae2e30.css.map",
+    "main.8e16a5da.js.map": "/RickMorty_characters/static/js/main.8e16a5da.js.map",
+    "511.44ef5cd2.chunk.js.map": "/RickMorty_characters/static/js/511.44ef5cd2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.32ae2e30.css",
-    "static/js/main.50268b84.js"
+    "static/js/main.8e16a5da.js"
   ]
 }
